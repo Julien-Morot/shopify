@@ -1,0 +1,6 @@
+development:
+  password: a7732b0c30428e5c395712b796de9629
+  theme_id: "79203172399"
+  store: julien-morot.myshopify.com
+  ignore_files: 
+    - config/settings_data.json
