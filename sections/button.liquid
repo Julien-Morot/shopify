@@ -1,0 +1,44 @@
+<div id="textsection">
+    <div class="container">
+        <h3> {{ section.settings.text-box }} </h3>
+        <a href="{{ section.settings.link }}" class="btn btn--cta">{{ section.settings.linktext}}</a>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Bouton Perso",
+    "settings": [
+{
+    "id": "text-box",
+    "type": "text",
+    "label": "Titre",
+    "default": "Title"
+},
+{
+    "id": "link",
+    "type": "url",
+    "label": "Lien"
+},
+{
+    "id": "linktext",
+    "type": "text",
+    "label": "Texte",
+    "default": "Cliquez ici"
+}
+    ]
+,
+    "presets": [
+        {
+            "name": "Bouton Perso",
+            "category": "Bouton Perso"
+        }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
