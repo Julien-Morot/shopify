@@ -6997,6 +6997,15 @@ $toolbar-height-small: 46px;
   max-width: 100%;
 }
 
+.button_medium {
+ text-align: center;
+}
+
+.button_large {
+  width: 250px;
+  height: 60px;
+}
+
 .custom__item-inner--video,
 .custom__item-inner--collection,
 .custom__item-inner--html {

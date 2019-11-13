@@ -1,7 +1,13 @@
+{% case section.settings.button_size %}
+        {% when 'medium' %}
+          {%- assign btn_height = 'button_medium' -%}
+        {% when 'large' %}
+          {%- assign btn_height = 'button_large' -%}
+ {% endcase %}         
 <div id="textsection">
     <div class="container">
         <h3> {{ section.settings.text-box }} </h3>
-        <a href="{{ section.settings.link }}" class="btn btn--cta">{{ section.settings.linktext}}</a>
+        <a href="{{ section.settings.link }}" class="btn btn--cta {{btn_height}}">{{ section.settings.linktext}}</a>
     </div>
 </div>
 
@@ -25,6 +31,15 @@
     "type": "text",
     "label": "Texte",
     "default": "Cliquez ici"
+},
+{
+   "type": "select",
+   "id": "button_size",
+   "options": [
+      { "value": "medium", "label": "medium"},
+      { "value": "large", "label": "large"}
+   ],
+   "label": "Taille du bouton"
 }
     ]
 ,
